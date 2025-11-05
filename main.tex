@@ -1,0 +1,158 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[scale=0.9]{geometry}
+
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\usepackage{enumitem}
+\setlist[itemize]{label=$\cdot$,nosep}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+
+\usepackage[style=authoryear,sorting=ddnt, maxbibnames=2, backend=biber]{biblatex}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+
+\usepackage{fontawesome5}
+
+\newenvironment{job}[2]{
+	\textbf{#1} \hfill #2\par\vspace{-0.5\baselineskip}
+}{}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+	\Huge{Youqiu Zhan}\\
+	\normalsize
+	\href{https://ulysseszh.github.io}{\raisebox{-0.05\height}\faGlobe~ulysseszh.github.io}\qquad
+	\href{mailto:Ulysses Zhan <UlyssesZhan@gmail.com>}{\raisebox{-0.05\height}\faEnvelope~UlyssesZhan@gmail.com}
+\end{center}
+
+\section{Research experience}
+
+\begin{job}{Bouwmeester Lab}{2024--}
+\begin{itemize}
+	\item Using COMSOL to simulate phononic crystals on a thin plate to find bind gaps
+	and design ultra-high-$Q$ mechanical resonators.
+	\item Using COMSOL to simulate third sound modes of superfluid helium on 2D geometries.
+	\item Using KLayout to design and produce masks used in nanofabrication of mechanical devices
+	used in optomechanical experiments.
+	\item Using QuTiP to simulate and visualize optomechanical processes
+	such as stimulated adiabatic Raman passage.
+	\item Using QuTiP to simulate quantum models of third sound modes of superfluid helium on 2D geometries.
+\end{itemize}
+\end{job}
+
+\begin{job}{UCSB honor thesis}{2025--}
+	Studying the continuum limit of statistical problem of the distribution of the maximum run length in
+	a Bernoulli sequence using techniques from mathematical physics,
+	such as the Adomian decomposition method and the grand canonical ensemble.
+	Using Monte Carlo methods to simulate the discrete problem to verify theoretical results.
+\end{job}
+
+\begin{job}{Independent research}{2021}
+	Using PyTorch to implement and train self-supervised neural networks
+	for finding the Hamiltonian of classical mechanical systems
+	from trajectory data.
+\end{job}
+
+\begin{job}{Regeneron ISEF}{2020--2021}
+	Using web technology to simulate and visualize classical Hamiltonian mechanical systems.
+	Implementing integrators and signal processing algorithms in JavaScript.
+\end{job}
+
+\begin{job}{Independent research}{2020--2021}
+	Using ABAQUS to simulate and visualize stress distribution in 3D structures
+	fatigue life under cyclic loading conditions.
+\end{job}
+
+\section{Education and coursework}
+
+\begin{job}{University of California, Santa Barbara}{2022--2026 (expected)}
+	Bachelor of Science in physics\hfill(GPA: 3.92/4.0)\par\vspace{-0.5\baselineskip}
+	\begin{itemize}
+		\item Classical mechanics (PHYS 205)\hfill audit
+		\item Electromagnetism (PHYS 210A--B)\hfill audit
+		\item Quantum mechanics (PHYS 215A--C)\hfill A, A+, A+
+		\item Quantum many-body problem (PHYS 217A--B)\hfill A, A+\\
+		Final projects:
+		\href{https://ulysseszh.github.io/coursework/crust-neutron-star.pdf}{Quantum many-body theories about the crust of neutron stars},
+		\href{https://ulysseszh.github.io/coursework/axion-insulator.pdf}{Axion electrodynamics in topological insulators}
+		\item Statistical mechanics (PHYS 219)\hfill audit
+		\item Advanced statistical mechanics (PHYS 220)\hfill audit
+		\item Relativistic quantum field (PHYS 221B--C)\hfill A, audit
+		\item Condensed matter (PHYS 223A--C)\hfill A+, A\textminus, A\\
+		Final project:
+		\href{https://ulysseszh.github.io/coursework/exact-2d-percolation.pdf}{Exact results in 2D percolation}
+		\item Gauge theory (PHYS 229A--B)\hfill audit
+		\item General relativity (PHYS 231A--C)\hfill audit, A, A\\
+		Final project:
+		\href{https://ulysseszh.github.io/coursework/spinor-curved.pdf}{Spinor fields in curved spacetime}
+		\item High energy astrophysics (PHYS 234)\hfill audit
+	\end{itemize}
+\end{job}
+
+\begin{job}{High School Affiliated to Shanghai Jiao Tong University}{2019--2022}
+	International Baccalaureate\hfill(Grade: 42/45)
+\end{job}
+
+\section{Development projects}
+
+Individual projects:\par\vspace{-0.5\baselineskip}
+\begin{tabularx}{\linewidth}{lX}
+\href{https://ulysseszh.github.io/doc/alda-rb/}{alda-rb} &
+Ruby library and DSL for live-coding music, powered by Alda \\
+\href{https://github.com/UlyssesZh/DisplayToggle}{DisplayToggle} &
+Android app for controlling the power mode of the physical display \\
+\href{https://github.com/UlyssesZh/mechsimul-js}{mechsimul-js} &
+Hamiltonian mechanics simulator written in JavaScript \\
+\href{https://sunniesnow.github.io/game/}{Sunniesnow} &
+Web rhythm game inspired by Lyrica \\
+\href{https://github.com/UlyssesZh/SunProxy}{SunProxy} &
+Android app for setting up network packet redirection rules by VPN \\
+\end{tabularx}
+
+Contributed projects:\par\vspace{-0.5\baselineskip}
+\begin{tabularx}{\linewidth}{lX}
+\href{https://phil294.github.io/AHK_X11}{AHK\_X11} &
+AutoHotkey for X11-based systems \\
+\href{https://github.com/nixos/nixpkgs}{Nixpkgs} &
+Software package collection distributed with Nix \\
+\href{https://heerdebeer.org/Software/markdown/paru/}{Paru} &
+Ruby wrapper over Pandoc \\
+\href{https://pixijs.com}{PixiJS} &
+2D rendering engine built on WebGL and WebGPU \\
+\end{tabularx}
+
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\section{Skills}
+\begin{itemize}
+	\item Programming languages: Ruby, JavaScript (and TypeScript),
+	Java (and Kotlin), Python\ldots
+	\item DevOps and software distribution: GNU/Linux, Docker, SSH, Git, Nix\ldots
+	\item Development tech stacks: Android SDK, Node.js, Electron.js, Jekyll, Pandoc\ldots
+	\item Scientific software: COMSOL, KLayout, BEAMER, Wolfram, Praat\ldots
+	\item Scientific Python packages: QuTiP, NetKet, PyTorch, OpenCV\ldots
+	\item Spoken languages: English, Mandarin Chinese.
+\end{itemize}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
